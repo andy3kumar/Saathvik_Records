@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saathvik's Portfolio - Young Record Holder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Slider Styles */
+        .slide {
+            transition: opacity 0.7s ease-in-out;
+            opacity: 0;
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+        .slide.active {
+            opacity: 1;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800 antialiased">
+
+    <!-- Sticky Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-900">Saathvik's Journey</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium transition">About Me</a>
+                <a href="#records" class="text-gray-600 hover:text-blue-600 font-medium transition">My Records</a>
+                <a href="#performances" class="text-gray-600 hover:text-blue-600 font-medium transition">Performances</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner Slider -->
+    <section class="relative w-full h-[60vh] md:h-[80vh] bg-gray-900 overflow-hidden group">
+        <!-- Slide 1: Dinosaur Record -->
+        <div class="slide active">
+            <img src="https://raw.githubusercontent.com/andy3kumar/Saathvik_Records/main/upload/Saathvik_India_book_of_record.jpeg" alt="India Book of Records - 50 Dinosaurs" class="w-full h-full object-cover object-top opacity-80">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4 z-20">
+                <h2 class="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">India Book of Records</h2>
+                <p class="text-xl md:text-2xl text-yellow-400 font-semibold drop-shadow-md max-w-2xl">Fastest Toddler to Identify 50 Dinosaurs</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: Flags Record -->
+        <div class="slide">
+            <img src="https://raw.githubusercontent.com/andy3kumar/Saathvik_Records/main/upload/WhatsApp%20Image%202026-10-20%20at%2009.59.55.jpeg" alt="International Book of Records - Countries Flags" class="w-full h-full object-cover object-top opacity-80">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4 z-20">
+                <h2 class="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">International Book of Records</h2>
+                <p class="text-xl md:text-2xl text-yellow-400 font-semibold drop-shadow-md max-w-2xl">Fastest to Identify All Countries' Flags</p>
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2 z-30 bg-white/30 hover:bg-white/60 text-white hover:text-gray-900 w-12 h-12 rounded-full flex items-center justify-center backdrop-blur-sm transition opacity-0 group-hover:opacity-100">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
+        </button>
+        <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2 z-30 bg-white/30 hover:bg-white/60 text-white hover:text-gray-900 w-12 h-12 rounded-full flex items-center justify-center backdrop-blur-sm transition opacity-0 group-hover:opacity-100">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+        </button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-8 inline-block relative">
+                About Saathvik – Our Young Record Holder
+                <span class="absolute -bottom-2 left-1/4 w-1/2 h-1 bg-yellow-500 rounded"></span>
+            </h2>
+            <div class="space-y-6 text-lg text-gray-600 leading-relaxed text-left md:text-center">
+                <p>
+                    Meet Saathvik, a young achiever with an extraordinary memory, a passion for learning, and a remarkable talent for identifying flags and dinosaurs.
+                </p>
+                <p>
+                    At a young age, Saathvik has proudly earned recognition from two prestigious record organizations, showcasing his exceptional observation skills, memory, and quick identification abilities.
+                </p>
+                
+                <p>
+                    Saathvik’s achievements reflect his curiosity, dedication, and enthusiasm for learning. His journey is a reminder that age is no barrier to discovering extraordinary abilities and pursuing big dreams. This website is a special space to celebrate his milestones, showcase his record-setting performances, preserve his certificates and memorable moments, and document his future achievements.
+                </p>
+                <p class="text-xl font-bold text-blue-800 py-4">
+                    Two Records. One Extraordinary Journey. A Future Full of Possibilities.
+                </p>
+                <p class="italic text-gray-500">
+                    With love and pride, we look forward to seeing Saathvik continue to learn, explore, and inspire others through his achievements.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Records Section -->
+    <section id="records" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 inline-block relative">
+                    My Records & Certificates
+                    <span class="absolute -bottom-2 left-1/4 w-1/2 h-1 bg-yellow-500 rounded"></span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Record Card 1 -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden group flex flex-col">
+                    <div class="overflow-hidden h-72">
+                        <img src="https://raw.githubusercontent.com/andy3kumar/Saathvik_Records/main/upload/WhatsApp%20Image%202026-10-20%20at%2009.59.55.jpeg" alt="International Book of Records" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 text-center bg-white flex-grow relative flex flex-col justify-center">
+                        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-blue-100 p-3 rounded-full shadow-md text-3xl">🌍</div>
+                        <h3 class="text-2xl font-bold text-blue-900 mt-4 mb-3">International Book of Records</h3>
+                        <p class="text-gray-800 font-bold text-lg italic mb-3">“Fastest to Identify All Countries’ Flags”</p>
+                        <p class="text-gray-500 text-sm">Demonstrating his impressive knowledge of countries and their national flags.</p>
+                    </div>
+                </div>
+
+                <!-- Record Card 2 -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden group flex flex-col">
+                    <div class="overflow-hidden h-72">
+                        <img src="https://raw.githubusercontent.com/andy3kumar/Saathvik_Records/main/upload/Saathvik_India_book_of_record.jpeg" alt="India Book of Records" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 text-center bg-white flex-grow relative flex flex-col justify-center">
+                        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-green-100 p-3 rounded-full shadow-md text-3xl">🦖</div>
+                        <h3 class="text-2xl font-bold text-green-800 mt-4 mb-3">India Book of Records</h3>
+                        <p class="text-gray-800 font-bold text-lg italic mb-3">“Fastest Toddler to Identify 50 Dinosaurs in 1 Minute 33 Seconds”</p>
+                        <p class="text-gray-500 text-sm">Highlighting his remarkable memory and knowledge of dinosaurs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performances Section -->
+    <section id="performances" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 inline-block relative">
+                    My Record Performances
+                    <span class="absolute -bottom-2 left-1/4 w-1/2 h-1 bg-yellow-500 rounded"></span>
+                </h2>
+                <p class="mt-6 text-gray-500 max-w-2xl mx-auto">Watch the incredible moments where Saathvik demonstrated his exceptional memory and set his records.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Video 1 -->
+                <div class="bg-slate-100 p-3 rounded-2xl shadow-inner flex flex-col">
+                    <div class="aspect-w-16 aspect-h-9 w-full bg-black rounded-xl overflow-hidden shadow-md">
+                        <video controls class="w-full h-full object-cover">
+                            <source src="https://raw.githubusercontent.com/andy3kumar/Saathvik_Records/main/upload/WhatsApp%20Video%202026-10-20%20at%2010.02.41.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p class="text-center font-semibold text-gray-700 mt-4 pb-2">Dinosaur Record News Feature</p>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="bg-slate-100 p-3 rounded-2xl shadow-inner flex flex-col">
+                    <div class="aspect-w-16 aspect-h-9 w-full bg-black rounded-xl overflow-hidden shadow-md">
+                        <video controls class="w-full h-full object-cover">
+                            <source src="https://raw.githubusercontent.com/andy3kumar/Saathvik_Records/main/upload/WhatsApp%20Video%202026-10-20%20at%2010.28.34.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p class="text-center font-semibold text-gray-700 mt-4 pb-2">Family Interview</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12 border-t-4 border-yellow-500">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold text-yellow-400 mb-4">My Journey Ahead</h3>
+            <p class="text-slate-300 max-w-2xl mx-auto mb-8">
+                A timeline of future milestones and accomplishments is just beginning...
+            </p>
+            <div class="w-16 h-1 bg-slate-700 mx-auto mb-8"></div>
+            <p class="text-sm text-slate-500 tracking-wide">&copy; 2026 Saathvik's Portfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Slider Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            let currentSlide = 0;
+            let slideInterval;
+
+            const showSlide = (index) => {
+                slides.forEach((slide, i) => {
+                    if (i === index) {
+                        slide.classList.add('active');
+                    } else {
+                        slide.classList.remove('active');
+                    }
+                });
+            };
+
+            const nextSlide = () => {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            };
+
+            const prevSlide = () => {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(currentSlide);
+            };
+
+            const startAutoSlide = () => {
+                slideInterval = setInterval(nextSlide, 5000);
+            };
+
+            const resetAutoSlide = () => {
+                clearInterval(slideInterval);
+                startAutoSlide();
+            };
+
+            // Event Listeners for controls
+            document.getElementById('nextBtn').addEventListener('click', () => {
+                nextSlide();
+                resetAutoSlide();
+            });
+
+            document.getElementById('prevBtn').addEventListener('click', () => {
+                prevSlide();
+                resetAutoSlide();
+            });
+
+            // Initialize auto slide
+            startAutoSlide();
+        });
+    </script>
+</body>
+</html>
